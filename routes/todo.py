@@ -3,9 +3,9 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from starlette import status
 
-from todo_app.schemas.todo import Todo, TodoCreate, TodoUpdate
-from todo_app.database.config import get_db
-from todo_app.database.orm import TodoDB
+from schemas.todo import Todo, TodoCreate, TodoUpdate
+from database.config import get_db
+from database.orm import TodoDB
 
 router = APIRouter(prefix="/todo", tags=["todo"])
 

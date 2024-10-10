@@ -1,7 +1,7 @@
 import logging
 from typing import Any, Union
 from sqlalchemy.exc import IntegrityError
-from todo_app.database.models import Todo
+from database.models import Todo
 from sqlalchemy import and_, or_
 from sqlalchemy.orm import Session
 

@@ -1,7 +1,7 @@
 import uvicorn
 from fastapi import FastAPI
 from routes import todo_router,index_router
-from todo_app.database.config import Base, engine
+from database.config import Base, engine
 
 app = FastAPI()
 app.include_router(todo_router)
